@@ -1,0 +1,17 @@
+.btn-subscribe {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  display: block;
+}
+
+.btn-subscribe, .email {
+    padding: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
