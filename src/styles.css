@@ -1,17 +1,64 @@
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 27px;
+  margin-bottom: 20px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+.container {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 100px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  max-width: 700px;
+}
+
+.check-mark {
+  border-radius: 50%;
+  background-color: hsl(4, 100%, 67%);
+  font-size: 11px;
+  padding: 5px;
+  position: relative;
+  top: -2px;
+}
+
+.email-label {
+    font-weight: 600;
+}
+
 .btn-subscribe {
   color: hsl(0, 0%, 100%);
   background-color: hsl(234, 29%, 20%);
   display: block;
 }
 
-.btn-subscribe, .email {
-    padding: 15px;
+.btn-subscribe:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(4, 100%, 67%);
+}
+
+.btn-subscribe,
+.email {
+  padding: 15px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(0, 0%, 100%);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 0%, 100%);
 }
