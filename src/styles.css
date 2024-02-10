@@ -1,5 +1,4 @@
 body {
-  background-color: hsl(235, 18%, 26%);
   font-family: "Roboto", sans-serif;
 }
 
@@ -36,7 +35,7 @@ svg {
 }
 
 .information {
-   padding-right: 40px 
+  padding-right: 40px;
 }
 
 .check-mark {
@@ -75,4 +74,44 @@ svg {
 }
 .attribution a {
   color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 601px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+
+  .container {
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 40px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    max-width: 720px;
+  }
+
+  .first-svg-container {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .svg-container {
+    display: none;
+  }
+
+  .container {
+    padding: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+  }
+
+  .information {
+    padding-right: 0;
+  }
 }
