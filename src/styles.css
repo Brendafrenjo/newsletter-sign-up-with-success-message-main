@@ -21,17 +21,6 @@ svg {
 .container {
   font-weight: 400;
   font-size: 15px;
-  margin-top: 100px;
-  background-color: hsl(0, 0%, 100%);
-  padding: 40px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  max-width: 720px;
-}
-
-.svg-container {
-  background-color: hsl(4, 100%, 67%);
-  border-radius: 15px;
 }
 
 .information {
@@ -81,10 +70,15 @@ svg {
     background-color: hsl(235, 18%, 26%);
   }
 
+  h1 {
+    padding-top: 20px;
+  }
+
   .container {
     margin-top: 100px;
     background-color: hsl(0, 0%, 100%);
-    padding: 40px;
+    padding: 15px;
+    padding-left: 40px;
     margin-bottom: 10px;
     border-radius: 20px;
     max-width: 720px;
@@ -92,6 +86,11 @@ svg {
 
   .first-svg-container {
     display: none;
+  }
+
+  .svg-container {
+    background-color: hsl(4, 100%, 67%);
+    border-radius: 15px;
   }
 }
 
