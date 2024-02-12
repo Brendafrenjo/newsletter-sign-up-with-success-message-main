@@ -23,6 +23,12 @@ svg {
   font-size: 15px;
 }
 
+.svg-container,
+.first-svg-container {
+  background-color: hsl(4, 100%, 67%);
+  border-radius: 15px;
+}
+
 .information {
   padding-right: 40px;
 }
@@ -82,15 +88,11 @@ svg {
     margin-bottom: 10px;
     border-radius: 20px;
     max-width: 720px;
+    padding-right: 30px;
   }
 
   .first-svg-container {
     display: none;
-  }
-
-  .svg-container {
-    background-color: hsl(4, 100%, 67%);
-    border-radius: 15px;
   }
 }
 
