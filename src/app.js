@@ -1,13 +1,13 @@
-function DisplayErrorMessage() {
-  if (error) {
+function SuccessfulSubscription(e) {
+      e.preventDefault();
+  if (emailAdress) {
   } else {
-    alert("Valid email required");
+        if (error) {
+          
+    }
   }
 }
 
 const error = document.querySelector(".btn-subscribe");
-error.addEventListener("click", DisplayErrorMessage);
-
-/*Thanks for subscribing! A confirmation email has been sent to
-      ash@loremcompany.com. Please open it and click the button inside to
-      confirm your subscription. Dismiss message*/
+const emailAdress = document.getElementById("email")
+emailAdress.addEventListener("click", SuccessfulSubscription);
