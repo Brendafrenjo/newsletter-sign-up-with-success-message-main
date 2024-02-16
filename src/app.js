@@ -1,10 +1,13 @@
 function handleSubscription(e) {
   e.preventDefault();
-  const emailAddress = document.getElementById("email").value.trim();
-  console.log();
-  if (emailAddress.length > 0) {
+  const emailInput = document.getElementById("email");
+  const emailAddress = emailInput.value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (emailAddress.length > 0 && emailPattern.test(emailAddress)) {
     //if successful subscription then confirmation
     alert("Successful subscription");
+    document.getElementById("confirmation-container").style.display =
+      "block";
   } else {
     //error
     alert("Subscription failed");
