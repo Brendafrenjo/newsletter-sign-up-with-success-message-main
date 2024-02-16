@@ -1,13 +1,15 @@
-function SuccessfulSubscription(e) {
-      e.preventDefault();
-  if (emailAdress) {
+function handleSubscription(e) {
+  e.preventDefault();
+  const emailAddress = document.getElementById("email").value.trim();
+  console.log();
+  if (emailAddress.length > 0) {
+    //if successful subscription then confirmation
+    alert("Successful subscription");
   } else {
-        if (error) {
-          
-    }
+    //error
+    alert("Subscription failed");
   }
 }
 
-const error = document.querySelector(".btn-subscribe");
-const emailAdress = document.getElementById("email")
-emailAdress.addEventListener("click", SuccessfulSubscription);
+const subscription = document.querySelector(".submit-form");
+subscription.addEventListener("click", handleSubscription);
