@@ -9,6 +9,8 @@ function handleSubscription(e) {
     const confirmation = document.getElementById("confirmation-container");
     confirmation.style.display = "block";
     emailInput.classList.remove("invalid-email");
+    const errorMessage = document.querySelector(".error-message");
+    errorMessage.style.display = "none";
   } else {
     //error
     alert("Subscription failed");
@@ -18,5 +20,7 @@ function handleSubscription(e) {
   }
 }
 
-const subscription = document.querySelector(".submit-form");
-subscription.addEventListener("click", handleSubscription);
+document.addEventListener("DOMContentLoaded", function () {
+  const subscription = document.querySelector(".submit-form");
+  subscription.addEventListener("click", handleSubscription);
+});
