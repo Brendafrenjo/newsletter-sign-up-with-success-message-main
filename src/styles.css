@@ -63,6 +63,16 @@ svg {
   font-weight: 600;
 }
 
+label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-message {
+  color: #ff0000;
+  display: none;
+}
+
 .btn-subscribe {
   color: hsl(0, 0%, 100%);
   background-color: hsl(234, 29%, 20%);
@@ -81,6 +91,11 @@ svg {
 
 #confirmation-container {
   display: none;
+}
+
+.invalid-email {
+  color: #ff0000;
+  border-color: #ff0000;
 }
 
 .attribution {
