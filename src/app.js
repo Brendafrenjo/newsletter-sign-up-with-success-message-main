@@ -6,11 +6,15 @@ function handleSubscription(e) {
   if (emailAddress.length > 0 && emailPattern.test(emailAddress)) {
     //if successful subscription then confirmation
     alert("Successful subscription");
-    document.getElementById("confirmation-container").style.display =
-      "block";
+    const confirmation = document.getElementById("confirmation-container");
+    confirmation.style.display = "block";
+    emailInput.classList.remove("invalid-email");
   } else {
     //error
     alert("Subscription failed");
+    emailInput.classList.add("invalid-email");
+    const errorMessage = document.querySelector(".error-message");
+    errorMessage.style.display = "inline-block";
   }
 }
 
