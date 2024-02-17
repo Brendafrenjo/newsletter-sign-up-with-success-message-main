@@ -1,10 +1,9 @@
-function handleSubscription(e) {
-  e.preventDefault();
+function handleSubscription(event) {
+  event.preventDefault();
   const emailInput = document.getElementById("email");
-  console.log("Email input:", emailInput);
   const emailAddress = emailInput.value.trim();
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (emailAddress.length > 0 && emailPattern.test(emailAddress)) {
+  if (emailInput.checkValidity()) {
     //if successful subscription then confirmation
     alert("Successful subscription");
     const confirmation = document.getElementById("confirmation-container");
