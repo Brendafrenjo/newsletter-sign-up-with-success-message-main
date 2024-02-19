@@ -93,11 +93,6 @@ label {
   display: none;
 }
 
-.invalid-email {
-  color: #ff0000;
-  border-color: #ff0000;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;

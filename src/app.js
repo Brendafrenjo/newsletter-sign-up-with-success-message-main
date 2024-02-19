@@ -3,22 +3,23 @@ function handleSubscription(event) {
   const emailInput = document.getElementById("email");
   const emailAddress = emailInput.value.trim();
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (emailInput.checkValidity()) {
+  const errorMessage = document.querySelector(".error-message");
+  if (emailAddress.length > 0 && emailPattern.test(emailAddress)) {
     //if successful subscription then confirmation
-    alert("Successful subscription");
     const confirmation = document.getElementById("confirmation-container");
     const subscribe = document.getElementById("subscribe-container");
     confirmation.style.display = "block";
     subscribe.style.display = "none";
     emailInput.classList.remove("invalid-email");
-    const errorMessage = document.querySelector(".error-message");
     errorMessage.style.display = "none";
+    emailInput.style.borderColor = "black";
+    emailInput.style.color = "black";
   } else {
     //error
-    alert("Subscription failed");
     emailInput.classList.add("invalid-email");
-    const errorMessage = document.querySelector(".error-message");
     errorMessage.style.display = "block";
+    emailInput.style.borderColor = "#ff0000";
+    emailInput.style.color = "#ff0000";
   }
 }
 
