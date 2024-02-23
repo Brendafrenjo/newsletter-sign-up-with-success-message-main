@@ -93,6 +93,10 @@ label {
   display: none;
 }
 
+.email::placeholder {
+  color: #ff0000;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

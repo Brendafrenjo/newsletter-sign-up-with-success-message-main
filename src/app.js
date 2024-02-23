@@ -8,21 +8,20 @@ function handleSubscription(event) {
     //if successful subscription then confirmation
     const confirmation = document.getElementById("confirmation-container");
     const subscribe = document.getElementById("subscribe-container");
-    const emailValue = document.querySelector("email-value");
+    const emailValue = document.querySelector(".email-value");
     confirmation.style.display = "block";
     subscribe.style.display = "none";
     emailInput.classList.remove("invalid-email");
     errorMessage.style.display = "none";
     emailInput.style.borderColor = "black";
-    emailInput.style.color = "black";
-
+    emailInput.style.placeholderColor = "black";
     emailValue.innerHTML = emailAddress;
   } else {
     //error
     emailInput.classList.add("invalid-email");
     errorMessage.style.display = "block";
     emailInput.style.borderColor = "#ff0000";
-    emailInput.style.color = "#ff0000";
+    emailInput.style.placeholderColor = "#ff0000";
   }
 }
 
