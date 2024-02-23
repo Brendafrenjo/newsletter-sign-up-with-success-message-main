@@ -14,14 +14,16 @@ function handleSubscription(event) {
     emailInput.classList.remove("invalid-email");
     errorMessage.style.display = "none";
     emailInput.style.borderColor = "black";
-    emailInput.style.placeholderColor = "black";
+    emailInput.style.setProperty("color", "inherit"); 
+    emailInput.placeholderColor = "black";
     emailValue.innerHTML = emailAddress;
   } else {
     //error
     emailInput.classList.add("invalid-email");
     errorMessage.style.display = "block";
     emailInput.style.borderColor = "#ff0000";
-    emailInput.style.placeholderColor = "#ff0000";
+    emailInput.style.setProperty("color", "#ff0000");
+    emailInput.placeholderColor = "#ff0000";
   }
 }
 

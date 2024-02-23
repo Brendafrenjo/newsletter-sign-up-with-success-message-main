@@ -93,10 +93,6 @@ label {
   display: none;
 }
 
-.email::placeholder {
-  color: #ff0000;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -154,6 +150,10 @@ label {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 10px;
+  }
+
+  .confirmation-container {
+    margin-top: 150px;
   }
 
   .information {
